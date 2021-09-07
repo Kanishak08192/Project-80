@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "barter-system-app-stage-5",
+    "slug": "snack-001aef83-fee4-4767-a4f2-034ce195f227",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "This is a Barter System App where the users can exchange some item with some user. You will know more by opening this project. So quickly open this project !!!!!!!!!!!!!!!!!!!"
+  }
+}
