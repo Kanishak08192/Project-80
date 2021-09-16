@@ -49,24 +49,19 @@ export default class BookDonateScreen extends React.Component {
       <ListItem
         key={i}
         title={item.item_name}
-        subtitle={item.reason_for_request}
-        titleStyle={{
-          color: 'black',
-          fontWeight: 'bold',
-          fontFamily: 'Britannic',
-          backgroundColor: 'gold',
-        }}
+        subtitle={item.reason_to_request}
+        titleStyle={{ color: 'black', fontWeight: 'bold' }}
         rightElement={
-          <TouchableOpacity style={styles.button}>
-            <Image
-              style={{ width: 50, height: 50 }}
-              source={{
-                uri:
-                  'https://cdn1.iconfinder.com/data/icons/donate-glyph-silhouettes/300/191420395Untitled-3-512.png',
-              }}
-            />
-          </TouchableOpacity>
-        }
+            <TouchableOpacity style={styles.button}
+            onPress={()=>{
+              this.props.navigation.navigate("RecieverDetails",{
+                details:item
+              })
+            }}>
+              <Text style={{color:'#ffff'}}>View</Text>
+            </TouchableOpacity>
+          }
+        bottomDivider
       />
     );
   };
